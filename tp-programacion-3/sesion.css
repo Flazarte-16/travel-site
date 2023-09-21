@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+header{
+    height: 600px;
+    width: 100%;
+}
+
+body{
+    background-image: url(./imagenes/ferreteria.jpg);
+}
+
+.search-bar{
+    width: 320px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.search{
+    border: 0;
+    padding-right: 80px;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.button{
+    height: 40px;
+    width: 45px;
+    background: rgb(73, 73, 73);
+    border: none;
+    color: white;
+}
+
+.container{
+    border: solid black;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    padding: 0 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    box-sizing: border-box
+}
+
+a{
+    color: black;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.incio-sesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    border: solid 5px black;
+    border-radius: 20px;
+}
+
+.nav-bar{
+    display: flex;
+    gap: 50px;
+}
+
+.input{
+    border: solid 2px black;
+    width: 200px;
+    height: 30px;
+}
+
+.enviar{
+    color: white;
+    border: solid 3px black;
+    height: 40px;
+    width: 100px;
+    background: rgb(56, 56, 56);
+}
+
+@media (width <= 768px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-bar {
+        margin: 20px auto;
+    }
+
+    .search {
+        height: auto;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .button {
+        height: auto;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
